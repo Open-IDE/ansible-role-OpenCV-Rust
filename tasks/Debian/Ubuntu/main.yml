@@ -1,0 +1,11 @@
+---
+# https://github.com/twistedfall/opencv-rust/blob/master/INSTALL.md
+
+- name: Install OpenCV system library
+  ansible.builtin.apt:
+    pkg:
+    - libopencv-dev
+    - clang
+    - libclang-dev
+  become: true
+
